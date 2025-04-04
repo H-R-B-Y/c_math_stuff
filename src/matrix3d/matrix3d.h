@@ -1,6 +1,7 @@
 #ifndef MATRIX3D_H
 #define MATRIX3D_H
 
+#include "../../include/defined.h"
 #include "../vec3d/vec3d.h"  // Assuming you have vec3d operations in this header.
 
 typedef union s_matrix3d

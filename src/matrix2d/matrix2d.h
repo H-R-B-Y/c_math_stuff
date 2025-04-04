@@ -6,13 +6,15 @@
 /*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 20:27:25 by hbreeze           #+#    #+#             */
-/*   Updated: 2025/04/04 12:57:41 by hbreeze          ###   ########.fr       */
+/*   Updated: 2025/04/04 13:18:45 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MATRIX2D_H
 #define MATRIX2D_H
 
+#include "../../include/defined.h"
+#include <math.h>
 #include "../vec2d/vec2d.h"  // Assuming you have vec2d operations in this header.
 
 typedef union s_matrix2d

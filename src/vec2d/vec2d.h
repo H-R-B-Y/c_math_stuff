@@ -6,22 +6,15 @@
 /*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 19:32:05 by hbreeze           #+#    #+#             */
-/*   Updated: 2025/04/04 12:54:21 by hbreeze          ###   ########.fr       */
+/*   Updated: 2025/04/04 13:19:36 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef VEC2D_H
 # define VEC2D_H
 
+#include "../../include/defined.h"
 # include <math.h>
-
-#ifndef M_PI
-# define M_PI 3.14159265358979323846
-#endif
-
-#ifndef MYFLOAT
-# define MYFLOAT float
-#endif
 
 // ██    ██ ███████  ██████ ██████  
 // ██    ██ ██      ██           ██ 

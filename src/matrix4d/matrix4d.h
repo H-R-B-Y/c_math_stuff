@@ -1,6 +1,7 @@
 #ifndef MATRIX4D_H
 #define MATRIX4D_H
 
+#include "../../include/defined.h"
 #include "../vec4d/vec4d.h" // Include your 4D vector header here
 
 // Matrix 4D struct definition
