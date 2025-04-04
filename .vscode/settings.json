@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"chrono": "cpp",
+		"vec2d.h": "c",
+		"span": "cpp",
+		"type_traits": "cpp"
+	}
+}
