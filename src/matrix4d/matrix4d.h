@@ -115,18 +115,19 @@ t_matrix4d	matrix4d_rotate_z(MYFLOAT angle);
 t_vec4	matrix4d_transform(t_matrix4d *m, t_vec4 *v);
 
 /**
- * @brief Calculate the minor of a 4D matrix.
- * @param v1 Pointer to the first vector (row).
- * @param v2 Pointer to the second vector (row).
- * @param v3 Pointer to the third vector (row).
- * @return The minor of the matrix formed by the three vectors.
+ * @brief Add two 4D matrices.
+ * @param m1 Pointer to the first matrix.
+ * @param m2 Pointer to the second matrix.
+ * @return The resulting matrix after addition.
  */
-MYFLOAT	matrix4d_minor(t_vec4 *v1, t_vec4 *v2, t_vec4 *v3);
+t_matrix4d	matrix4d_add(t_matrix4d *m1, t_matrix4d *m2);
 
 /**
- * @brief Print a 4D matrix for debugging purposes.
- * @param m Pointer to the matrix.
+ * @brief Subtract one 4D matrix from another.
+ * @param m1 Pointer to the first matrix.
+ * @param m2 Pointer to the second matrix.
+ * @return The resulting matrix after subtraction.
  */
-void	matrix4d_print(t_matrix4d *m);
+t_matrix4d	matrix4d_subtract(t_matrix4d *m1, t_matrix4d *m2);
 
 #endif // MATRIX4D_H
