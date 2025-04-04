@@ -6,7 +6,7 @@
 /*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 20:27:25 by hbreeze           #+#    #+#             */
-/*   Updated: 2025/04/04 13:18:45 by hbreeze          ###   ########.fr       */
+/*   Updated: 2025/04/04 13:32:27 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ t_matrix2d	matrix2d_add(t_matrix2d *m1, t_matrix2d *m2);
  * @param m2 Pointer to the second matrix.
  * @return The result of the subtraction.
  */
-t_matrix2d	matrix2d_subtract(t_matrix2d *m1, t_matrix2d *m2);
+t_matrix2d	matrix2d_sub(t_matrix2d *m1, t_matrix2d *m2);
 
 /**
  * @brief Transpose a 2D matrix.

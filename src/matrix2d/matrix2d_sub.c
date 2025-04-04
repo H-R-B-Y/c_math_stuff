@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   matrix2d_subtract.c                                :+:      :+:    :+:   */
+/*   matrix2d_sub.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 20:29:01 by hbreeze           #+#    #+#             */
-/*   Updated: 2025/04/03 20:31:25 by hbreeze          ###   ########.fr       */
+/*   Updated: 2025/04/04 13:32:27 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "matrix2d.h"
 
-t_matrix2d	matrix2d_subtract(t_matrix2d *mat1, t_matrix2d *mat2)
+t_matrix2d	matrix2d_sub(t_matrix2d *mat1, t_matrix2d *mat2)
 {
 	t_matrix2d	result;
 

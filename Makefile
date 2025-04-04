@@ -19,7 +19,7 @@ SRCS			+= $(SRC_DIR)/matrix2d/matrix2d_add.c \
 				$(SRC_DIR)/matrix2d/matrix2d_inverse.c \
 				$(SRC_DIR)/matrix2d/matrix2d_multiply.c \
 				$(SRC_DIR)/matrix2d/matrix2d_scalar_multiply.c \
-				$(SRC_DIR)/matrix2d/matrix2d_subtract.c \
+				$(SRC_DIR)/matrix2d/matrix2d_sub.c \
 				$(SRC_DIR)/matrix2d/matrix2d_transform.c \
 				$(SRC_DIR)/matrix2d/matrix2d_transpose.c \
 
@@ -29,7 +29,7 @@ SRCS			+= $(SRC_DIR)/matrix3d/matrix3d_add.c \
 				$(SRC_DIR)/matrix3d/matrix3d_inverse.c \
 				$(SRC_DIR)/matrix3d/matrix3d_multiply.c \
 				$(SRC_DIR)/matrix3d/matrix3d_scalar_multiply.c \
-				$(SRC_DIR)/matrix3d/matrix3d_subtract.c \
+				$(SRC_DIR)/matrix3d/matrix3d_sub.c \
 				$(SRC_DIR)/matrix3d/matrix3d_transform.c \
 				$(SRC_DIR)/matrix3d/matrix3d_transpose.c \
 
@@ -43,7 +43,7 @@ SRCS			+= $(SRC_DIR)/matrix4d/matrix4d_add.c \
 				$(SRC_DIR)/matrix4d/matrix4d_rotate_z.c \
 				$(SRC_DIR)/matrix4d/matrix4d_scalar_multiply.c \
 				$(SRC_DIR)/matrix4d/matrix4d_scaling.c \
-				$(SRC_DIR)/matrix4d/subtract.c \
+				$(SRC_DIR)/matrix4d/matrix4d_sub.c \
 				$(SRC_DIR)/matrix4d/matrix4d_transform.c \
 				$(SRC_DIR)/matrix4d/matrix4d_translation.c \
 				$(SRC_DIR)/matrix4d/matrix4d_transpose.c \

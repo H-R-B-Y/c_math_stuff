@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   matrix3d_subtract.c                                :+:      :+:    :+:   */
+/*   matrix3d_sub.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 20:35:27 by hbreeze           #+#    #+#             */
-/*   Updated: 2025/04/03 20:37:50 by hbreeze          ###   ########.fr       */
+/*   Updated: 2025/04/04 13:32:41 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "matrix3d.h"
 
-t_matrix3d	matrix3d_subtract(t_matrix3d *mat1, t_matrix3d *mat2)
+t_matrix3d	matrix3d_sub(t_matrix3d *mat1, t_matrix3d *mat2)
 {
 	t_matrix3d	result;
 

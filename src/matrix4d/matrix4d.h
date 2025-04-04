@@ -128,6 +128,6 @@ t_matrix4d	matrix4d_add(t_matrix4d *m1, t_matrix4d *m2);
  * @param m2 Pointer to the second matrix.
  * @return The resulting matrix after subtraction.
  */
-t_matrix4d	matrix4d_subtract(t_matrix4d *m1, t_matrix4d *m2);
+t_matrix4d	matrix4d_sub(t_matrix4d *m1, t_matrix4d *m2);
 
 #endif // MATRIX4D_H

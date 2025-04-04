@@ -6,13 +6,13 @@
 /*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 21:32:46 by hbreeze           #+#    #+#             */
-/*   Updated: 2025/04/04 13:29:55 by hbreeze          ###   ########.fr       */
+/*   Updated: 2025/04/04 13:31:12 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "matrix4d.h"
 
-t_matrix4d	matrix4d_subtract(t_matrix4d *a, t_matrix4d *b)
+t_matrix4d	matrix4d_sub(t_matrix4d *a, t_matrix4d *b)
 {
 	t_matrix4d	result;
 

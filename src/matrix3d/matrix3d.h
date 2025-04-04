@@ -59,7 +59,7 @@ t_matrix3d	matrix3d_add(t_matrix3d *m1, t_matrix3d *m2);
  * @param m2 Pointer to the second matrix.
  * @return The result of the subtraction.
  */
-t_matrix3d	matrix3d_subtract(t_matrix3d *m1, t_matrix3d *m2);
+t_matrix3d	matrix3d_sub(t_matrix3d *m1, t_matrix3d *m2);
 
 /**
  * @brief Transpose a 3D matrix.
