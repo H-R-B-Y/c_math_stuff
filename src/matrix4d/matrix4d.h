@@ -130,4 +130,7 @@ t_matrix4d	matrix4d_add(t_matrix4d *m1, t_matrix4d *m2);
  */
 t_matrix4d	matrix4d_sub(t_matrix4d *m1, t_matrix4d *m2);
 
+
+t_matrix4d	matrix4d_rotate(MYFLOAT x_angle, MYFLOAT y_angle, MYFLOAT z_angle);
+
 #endif // MATRIX4D_H

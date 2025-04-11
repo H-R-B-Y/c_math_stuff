@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   matrix4d_translation.c                             :+:      :+:    :+:   */
+/*   matrix4d_rotate.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/03 21:56:56 by hbreeze           #+#    #+#             */
-/*   Updated: 2025/04/09 14:33:59 by hbreeze          ###   ########.fr       */
+/*   Created: 2025/04/03 21:55:29 by hbreeze           #+#    #+#             */
+/*   Updated: 2025/04/09 13:40:39 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "matrix4d.h"
 
-t_matrix4d matrix4d_translation(MYFLOAT x, MYFLOAT y, MYFLOAT z, MYFLOAT w)
+t_matrix4d	matrix4d_rotate(MYFLOAT x_angle, MYFLOAT y_angle, MYFLOAT z_angle)
 {
-	t_matrix4d matrix;
+	t_matrix4d	angles[4];
 
-	matrix.x = (t_vec4){1.0f, 0.0f, 0.0f, 0.0f};
-	matrix.y = (t_vec4){0.0f, 1.0f, 0.0f, 0.0f};
-	matrix.z = (t_vec4){0.0f, 0.0f, 1.0f, 0.0f};
-	matrix.w = (t_vec4){x, y, z, w};  // <--- assumes column-major: this is the translation
-	return (matrix);
+	angles[0] = matrix4d_rotate_x(x_angle);
+	angles[1] = matrix4d_rotate_y(y_angle);
+	angles[2] = matrix4d_rotate_z(z_angle);
+	angles[0] = matrix4d_multiply(&angles[0], &angles[1]);
+	angles[3] = matrix4d_multiply(&angles[0], &angles[2]);
+	return (angles[3]);
 }
-
