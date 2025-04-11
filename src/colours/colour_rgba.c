@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   colour_rgba.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hbreeze <hbreeze@student.42.fr>            #+#  +:+       +#+        */
+/*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-11-14 20:23:14 by hbreeze           #+#    #+#             */
-/*   Updated: 2024-11-14 20:23:14 by hbreeze          ###   ########.fr       */
+/*   Created: 2024/11/14 20:23:14 by hbreeze           #+#    #+#             */
+/*   Updated: 2025/04/11 18:46:25 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/hb_math_ext.h"
 
-__uint32_t	colour_rgba(__uint8_t red,
-	__uint8_t green,
-	__uint8_t blue,
-	__uint8_t alpha)
+u32	colour_rgba(u8 red,
+	u8 green,
+	u8 blue,
+	u8 alpha)
 {
-	__uint32_t	out;
+	u32	out;
 
 	out = 0;
 	out += (red << 24);
@@ -27,27 +27,27 @@ __uint32_t	colour_rgba(__uint8_t red,
 	return (out);
 }
 
-__uint32_t	lerp_colour(__uint32_t from, __uint32_t too, float t)
+u32	lerp_colour(u32 from, u32 too, float t)
 {
-	__uint8_t	r;
-	__uint8_t	g;
-	__uint8_t	b;
-	__uint8_t	a;
+	u8	r;
+	u8	g;
+	u8	b;
+	u8	a;
 
-	r = (__uint8_t)lerp((float)rgba_get_red(from),
+	r = (u8)lerp((float)rgba_get_red(from),
 			(float)rgba_get_red(too), t);
-	g = (__uint8_t)lerp((float)rgba_get_green(from),
+	g = (u8)lerp((float)rgba_get_green(from),
 			(float)rgba_get_green(too), t);
-	b = (__uint8_t)lerp((float)rgba_get_blue(from),
+	b = (u8)lerp((float)rgba_get_blue(from),
 			(float)rgba_get_blue(too), t);
-	a = (__uint8_t)lerp((float)rgba_get_alph(from),
+	a = (u8)lerp((float)rgba_get_alph(from),
 			(float)rgba_get_alph(too), t);
 	return (colour_rgba(r, g, b, a));
 }
 
-__uint32_t	parse_rgba_str(const char *rgba)
+u32	parse_rgba_str(const char *rgba)
 {
-	__uint32_t	result;
+	u32	result;
 	int			i;
 	char		c;
 
