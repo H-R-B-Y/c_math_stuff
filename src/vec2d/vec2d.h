@@ -6,7 +6,7 @@
 /*   By: hbreeze <hbreeze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 19:32:05 by hbreeze           #+#    #+#             */
-/*   Updated: 2025/04/04 13:19:36 by hbreeze          ###   ########.fr       */
+/*   Updated: 2025/04/11 18:57:08 by hbreeze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ typedef union s_vec2	t_vec2;
 
 union __attribute__((aligned(8))) s_vec2
 {
-	struct {
+	struct
+	{
 		MYFLOAT	x;
 		MYFLOAT	y;
 	};

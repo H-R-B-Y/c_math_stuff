@@ -3,6 +3,7 @@
 
 #include "../../include/defined.h"
 #include "../vec4d/vec4d.h" // Include your 4D vector header here
+#include "../vec3d/vec3d.h"
 
 // Matrix 4D struct definition
 typedef union s_matrix4d {
@@ -19,7 +20,7 @@ typedef union s_matrix4d {
 		MYFLOAT x3, y3, z3, w3;  // Third row elements
 		MYFLOAT x4, y4, z4, w4;  // Fourth row elements
 	};
-	MYFLOAT m[4][4];  // 4D array representation`
+	MYFLOAT m[4][4];  // 4D array representation
 } __attribute__((aligned(8)))	t_matrix4d;
 
 /**
